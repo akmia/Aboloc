@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #000;
+    box-shadow: 0 0 50px #D4EBF4;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.input-group {
+    position: relative;
+    margin: 20px 0; /* Adjusted margin for spacing */
+    border-bottom: 2px solid #fefefe;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: aliceblue;
+    pointer-events: none;
+    transition: 0.5s; /* Changed from -5s to 0.5s for the transition duration */
+}
+
+.input-group input {
+    width: 100%; /* Changed from 320% to 100% */
+    height: 40px; /* Changed from 40% to 40px */
+    font-size: 16px;
+    color: aliceblue;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.remember {
+    margin: 10px 0; /* Adjusted margin for spacing */
+}
+
+.remember label {
+    color: aliceblue;
+    font-size: 14px;
+}
+
+.remember label input {
+    background: #D4EBF4; /* Changed from accent-color to background */
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #D4EBF4;
+    box-shadow: 0 0 10px #D4EBF4;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.signUp-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.signUp-link p {
+    color: aliceblue;
+}
+
+.signUp-link p a {
+    color: #D4EBF4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signUp-link p a:hover {
+    text-decoration: underline;
+}

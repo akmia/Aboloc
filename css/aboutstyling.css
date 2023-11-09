@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', monospace;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bgabout.png);
+    background-color: #C2DFE3;
+    background-size: 1300 x 750px;
+    background-position: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #C2DFE3;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 45px;
+    text-shadow: 2px 2px #9DB4C0;
+    color: #FEFEFE;
+}
+p{
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+section .animate{
+    opacity: 0;
+    filter: blur(5px);
+    transition: 1s;
+}
+section.show-animate .animate{
+    opacity: 1;
+    filter: blur(0);
+}
+.sec-1 .images img {
+    max-width: 220px;
+    margin: 0 30px;
+    transform: translateX(-100%);
+    transition-delay: calc(.2s * var(--i));
+}
+.sec-1.show-animate .images img{
+    transform: translateX(0);
+}
+.sec-1 .animate{
+    transform: translateX(-100%);
+}
+.sec-1.show-animate .animate{
+    transform: translateX(0);
+}
+.sec-2 .animate{
+    transform: scale(.7);
+}
+.sec-2.show-animate .animate{
+    transform: scale(1);
+}
+.sec-3 .animate{
+    transform: translateX(-100%);
+}
+.sec-3.show-animate .animate{
+    transform: translateX(0);
+}
+.sec-4 .animate{
+    transform: translateX(100%);
+}
+.sec-4.show-animate .animate{
+    transform: translateX(0);
+}
+.sec-5 .animate{
+    transform: translateX(-100%);
+}
+.sec-5.show-animate .animate{
+    transform: translateX(0);
+}
+.sec-6{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec-6 .animate{
+    transform: translateX(100%);
+}
+.sec-6.show-animate .animate{
+    transform: translateX(0);
+}
+.sec-7 .animate{
+    transform: translateX(-100%);
+}
+.sec-7.show-animate .animate{
+    transform: translateX(0);
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #FEFEFE;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #D4EBF4;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
